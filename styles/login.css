@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Html DOM */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    padding: 2rem 5rem;
+}
+
+.logo{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo span{
+    color: #ffffff;
+    background: green;
+    border-radius: .5rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 3% auto;
+}
+
+.left-col .image{
+    width: 300px;
+}
+
+img{
+    width: 100%;
+    display: block;
+    border-radius: .5rem;
+}
+
+.right-col{
+    width: 50%;
+}
+
+form{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+}
+
+form .input-items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+form .items{
+    display: flex;
+    align-items: center;
+}
+
+form .items span{
+    margin-left: .5rem;
+}
+
+form .input-items .inputField{
+    height: 40px;
+    padding-left: .5rem;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
+
+form button{
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid green;
+    outline: none;
+    background: green;
+    color: #ffffff;
+    margin: 2rem 0 1rem;
+    border-radius: .5rem;
+}
+
+form button:hover{
+    background: rgba(0, 128, 0, 0.774);
+}
+
+form p{
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    header{
+        padding: 2rem 2.5rem;
+    }
+
+    main{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 10% auto;
+    }
+
+    .left-col .image{
+        display: none;
+    }
+
+    .right-col{
+        width: 80%;
+    }
+    
+}
